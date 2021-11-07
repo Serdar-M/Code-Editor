@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Code Editor: ivanText ++</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- wrapper -->
+<div id="wrapper">
+  <!--./ menuBar -->
+  <div id="menuBar">
+    <div id="logo">
+      <h1><span class="be-block">Code Editor:</span> <span class="trademark">iVanText ++</span> <small>v. 0.01</small></h1></div>
+    <ul id="toggles">
+      <li data-container="htmlContainer" class="toggle active">HTML</li>
+      <li data-container="cssContainer" class="toggle">CSS</li>
+      <li data-container="jsContainer" class="toggle">JS</li>
+      <li data-container="resultContainer" class="toggle active">RESULT</li>
+    </ul>
+    <button id="runBtn">Run</button>
+  </div>
+  <!--./ menuBar -->
+  <!-- code-container -->
+  <div class="code-container" id="htmlContainer">
+    <label class="section-label" for="htmlBox">HTML</label>
+    <textarea id="htmlBox" placeholder="Example HTML code"></textarea>
+  </div>
+  <!--./ code-container -->
+  <!-- code-container -->
+  <div class="code-container" id="cssContainer">
+    <label class="section-label" for="cssBox">CSS</label>
+    <textarea id="cssBox" placeholder="Example CSS code"></textarea>
+  </div>
+  <!--./ code-container -->
+  <!-- code-container -->
+  <div class="code-container" id="jsContainer">
+    <label class="section-label" for="htmlBox">JS</label>
+    <textarea disabled id="jsBox" placeholder="Example JS code">Hi guys, in order to work with this section, I had to use eval(), but eval() is Evil(). Until I figure out a better approach on that matter, I will leave this section disabled. You can test this pen LOCALLY and turn on the js functionality by enabling this textarea and uncommenting -> document.getElementById('resultBox').contentWindow.eval($('#jsBox').val());. It will work, but please test it LOCALLY!</textarea>
+  </div>
+  <!--./ code-container -->
+  <div class="code-container" id="resultContainer">
+    <label class="section-label" for="resultBox">Result</label>
+    <iframe id="resultBox"></iframe>
+  </div>
+  <!--./ code-container -->
+</div>
+<!--./ wrapper -->
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
